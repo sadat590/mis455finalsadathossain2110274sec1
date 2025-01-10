@@ -1,0 +1,167 @@
+/* Body background and general page layout */
+body {
+    background-color: #f3f9f3;  /* Light mint green background for a refreshing, clean look */
+    font-family: 'Arial', sans-serif;  /* Clean sans-serif font */
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+}
+
+/* Logo styling */
+.logo {
+    width: 60%;
+}
+
+/* Cover section styling */
+.cover {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.cover2 {
+    width: 25%;
+}
+
+/* Search box styling */
+#findbox {
+    width: 200px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #c8e6c9;  /* Very light mint green border */
+    background-color: #ffffff;
+    font-size: 16px;
+}
+
+/* Inner card styling for meals */
+.innerStyle {
+    margin: 15px;
+    padding: 20px;
+    background-color: #e1f5e1;  /* Soft mint green for meal cards */
+    border: 1px solid #c8e6c9;  /* Very light mint green border */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Subtle shadow for depth */
+}
+
+/* Meal images styling */
+.innerStyle img {
+    width: 100%;
+    max-width: 200px;
+    margin: 15px auto;
+    display: block;
+}
+
+/* Container for meal results (grid layout) */
+#container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));  /* Responsive grid */
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Button styling for search */
+button.btn.btn-primary {
+    background-color: #66bb6a;  /* Mint green button */
+    color: #ffffff;
+    border: none;
+    padding: 12px 24px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+/* Button hover effect */
+button.btn.btn-primary:hover {
+    background-color: #4caf50;  /* Slightly darker mint green on hover */
+}
+
+/* Button styling for "Show More" */
+#container button {
+    background-color: #dcedc8;  /* Light mint green for the "Show More" button */
+    color: #333;
+    width: 100%;
+    height: 45px;
+    border: 1px solid #c8e6c9;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect for "Show More" */
+#container button:hover {
+    background-color: #c5e1a5;  /* Slightly darker mint green hover effect */
+}
+
+/* Footer styling */
+footer {
+    background-color: #f1f8e9;  /* Light mint green for footer */
+    color: #333;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Optional subtle shadow */
+}
+
+/* Footer text and links */
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+/* Footer links */
+footer a {
+    color: #66bb6a;  /* Mint green for footer links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Navbar link color */
+.navbar-nav .nav-link {
+    color: #333;  /* Dark grey text for navbar links */
+}
+
+/* Navbar link hover color */
+.navbar-nav .nav-link:hover {
+    color: #66bb6a;  /* Mint green hover effect for navbar links */
+}
+
+/* Navbar brand color */
+.navbar-brand {
+    color: #333;
+}
+
+/* Navbar brand hover color */
+.navbar-brand:hover {
+    color: #66bb6a;  /* Mint green hover effect for navbar brand */
+}
+
+/* Navbar link active state */
+.navbar-nav .nav-link.active {
+    color: #66bb6a;  /* Highlight active link with mint green */
+}
+
+li a:hover:not(.active) {
+    background-color: #f1f8e9;
+    color: rgb(12, 0, 0);
+}
+
+/* Flex layout for full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.cover, #container {
+    flex: 1;
+}
